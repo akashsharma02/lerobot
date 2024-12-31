@@ -120,7 +120,7 @@ def load_json(fpath: Path) -> Any:
 def write_json(data: dict, fpath: Path) -> None:
     fpath.parent.mkdir(exist_ok=True, parents=True)
     with open(fpath, "w") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
+        json.dump(data, f, indent=4, ensure_ascii=False, default=list)
 
 
 def load_jsonlines(fpath: Path) -> list[Any]:

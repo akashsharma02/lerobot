@@ -201,7 +201,7 @@ def main(raw_dir: Path, repo_id: str, mode: str = "video", push_to_hub: bool = T
 
 if __name__ == "__main__":
     # To try this script, modify the repo id with your own HuggingFace user (e.g cadene/pusht)
-    repo_id = "lerobot/pusht"
+    repo_id = "akashsharma02/pusht"
 
     modes = ["video", "image", "keypoints"]
     # Uncomment if you want to try with a specific mode
